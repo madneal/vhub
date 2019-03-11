@@ -1,0 +1,20 @@
+# Nmap 7.70 scan initiated Sun Mar 10 22:42:33 2019 as: nmap -sT -p- --min-rate 1000 -oA openports 192.168.3.148
+Nmap scan report for 192.168.3.148
+Host is up (0.00050s latency).
+Not shown: 65523 filtered ports
+PORT      STATE  SERVICE
+20/tcp    closed ftp-data
+21/tcp    open   ftp
+22/tcp    open   ssh
+53/tcp    open   domain
+80/tcp    open   http
+123/tcp   closed ntp
+137/tcp   closed netbios-ns
+138/tcp   closed netbios-dgm
+139/tcp   open   netbios-ssn
+666/tcp   open   doom
+3306/tcp  open   mysql
+12380/tcp open   unknown
+MAC Address: 00:0C:29:F4:9E:73 (VMware)
+
+# Nmap done at Sun Mar 10 22:44:14 2019 -- 1 IP address (1 host up) scanned in 100.54 seconds
