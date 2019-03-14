@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Mon Mar 11 01:36:41 2019 as: nmap -sV -sC -p9999,10000 -oA services 192.168.3.149
+Host: 192.168.3.149 ()	Status: Up
+Host: 192.168.3.149 ()	Ports: 9999/open/tcp//abyss?///, 10000/open/tcp//http//SimpleHTTPServer 0.6 (Python 2.7.3)/
+# Nmap done at Mon Mar 11 01:37:18 2019 -- 1 IP address (1 host up) scanned in 37.35 seconds
