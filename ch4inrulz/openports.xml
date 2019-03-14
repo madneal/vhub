@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu Mar 14 00:43:53 2019 as: nmap -sT -p- -&#45;min-rate 10000 -oA openports 192.168.3.154 -->
+<nmaprun scanner="nmap" args="nmap -sT -p- -&#45;min-rate 10000 -oA openports 192.168.3.154" start="1552538633" startstr="Thu Mar 14 00:43:53 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1552538633" endtime="1552538636"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.3.154" addrtype="ipv4"/>
+<address addr="00:0C:29:71:17:92" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="conn-refused" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8011"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="894" rttvar="1022" to="100000"/>
+</host>
+<runstats><finished time="1552538636" timestr="Thu Mar 14 00:43:56 2019" elapsed="3.19" summary="Nmap done at Thu Mar 14 00:43:56 2019; 1 IP address (1 host up) scanned in 3.19 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

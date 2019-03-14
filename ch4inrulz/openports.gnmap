@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Thu Mar 14 00:43:53 2019 as: nmap -sT -p- --min-rate 10000 -oA openports 192.168.3.154
+Host: 192.168.3.154 ()	Status: Up
+Host: 192.168.3.154 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 8011/open/tcp//unknown///	Ignored State: closed (65531)
+# Nmap done at Thu Mar 14 00:43:56 2019 -- 1 IP address (1 host up) scanned in 3.19 seconds

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu Mar 14 01:13:08 2019 as: nmap -sC -sV -p21,22,80,8011 -oA services 192.168.3.154 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p21,22,80,8011 -oA services 192.168.3.154" start="1552540388" startstr="Thu Mar 14 01:13:08 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="4" services="21-22,80,8011"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1552540388" endtime="1552540401"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.3.154" addrtype="ipv4"/>
+<address addr="00:0C:29:71:17:92" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" product="vsftpd" version="2.3.5" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:2.3.5</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 192.168.3.153&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 5&#xa;     vsFTPd 2.3.5 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 192.168.3.153&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 5&#xa;     vsFTPd 2.3.5 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="5.9p1 Debian 5ubuntu1.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:5.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 d4:f8:c1:55:92:75:93:f7:7b:65:dd:2b:94:e8:bb:47 (DSA)&#xa;  2048 3d:24:ea:4f:a2:2a:ca:63:b7:f4:27:0f:d9:17:03:22 (RSA)&#xa;  256 e2:54:a7:c7:ef:aa:8c:15:61:20:bd:aa:72:c0:17:88 (ECDSA)"><table>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAIuGY9hMiow1iUE4M6jlFMyRvIcXHfe1gxzKlZ25lnFbXkrAXbXumtne+pPcjnxeoGDsp1R8hooJ3dhkY/gkDS9Qk6Vm+Fm7VaYji67JEx2DUmBesm+guJjbJPouYXkZDawyisdHVIkAmN1FzlHlvehO9yXBnlMh59J70Pc3fUEBAAAAFQCWzHKYNQk54YbRofirUTsV8HQAXQAAAIA3wGdUNVTMA9XehsP8MOZC9YoSaZ11S15eutRQwVN8NghvimjM0fiam0Mhy5NkHjl9iIPd77sgMm51qu20b5cPODQP7QdrIAuXH9M7queXKTmjKmGFCZ7XgecbkQ+U3APeECUMhI7q5WFQafUMgeHxaX5GqJSFuVnP+3JoI7g4EwAAAIBJ1Afkb6HMUbJeQb5bzAxYhbBStosg2yb5ThUSbxMFHHhIdkSgAID2g4LsAQK9LJ9IAJ+NQ3cl+QRoA1oY1FQyctKds2eREJVsE2X0ZteZ2QKgPjiG+nVmJa+DT2L61jfp2eqD8PXdBsnS0+sYqzBacbi9+PGTr/sqrjNlUghpFw==</elem>
+<elem key="bits">1024.0</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="fingerprint">d4f8c155927593f77b65dd2b94e8bb47</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC6hK5ZtxkpgvJgXbA0nXRQeAlL6hVVekPVcO8ic27Sn+yG4miW0HvDIm5QusJKibfqqx4xMXGb7oawCXzuRlVhHWDM/ilZ74plRDMaBx5liempgpUtnWY2+nIiiwUB3cQ24URjA847QRIuDuqvFV38B8G6lodg+92NCCoEVp2F5pQfMyBD9osHQGGEEczmJCI7MEYD11yP2AL5OtK5RDrpe+Lx+aPMHakB+oROququ0prWAxMpZ/bsMwafpeaKR+nAbRQg73FngMyED46RdCNtEPOsqiu+p9CtOO8KGqYPXrjhKbFmqwkVdO3H1dWFD/ks9eNPsUBpMkC81wMnPbQR</elem>
+<elem key="bits">2048.0</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">3d24ea4fa22aca63b7f4270fd9170322</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLS+Dyvf7FkDoDxFdd+uzyxEO3X8ZSTa38kF4bCrcRpXEs6kQTrg7N2A2ASp9yO3Eyi99eiEg+ZT00aQ1yHIOQM=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">e254a7c7efaa8c156120bdaa72c01788</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-server-header" output="Apache/2.2.22 (Ubuntu)"><elem>Apache/2.2.22 (Ubuntu)</elem>
+</script><script id="http-title" output="FRANK&apos;s Website | Under development"><elem key="title">FRANK&apos;s Website | Under development</elem>
+</script></port>
+<port protocol="tcp" portid="8011"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-server-header" output="Apache/2.2.22 (Ubuntu)"><elem>Apache/2.2.22 (Ubuntu)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+</ports>
+<times srtt="676" rttvar="1997" to="100000"/>
+</host>
+<runstats><finished time="1552540401" timestr="Thu Mar 14 01:13:21 2019" elapsed="13.19" summary="Nmap done at Thu Mar 14 01:13:21 2019; 1 IP address (1 host up) scanned in 13.19 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
