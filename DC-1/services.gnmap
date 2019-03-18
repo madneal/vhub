@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Fri Mar 15 02:04:40 2019 as: nmap -sC -sV -p22,80,111,32769 -oA services 192.168.3.155
+Host: 192.168.3.155 ()	Status: Up
+Host: 192.168.3.155 ()	Ports: 22/open/tcp//ssh//OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.22 ((Debian))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 32769/open/tcp//status//1 (RPC #100024)/
+# Nmap done at Fri Mar 15 02:04:55 2019 -- 1 IP address (1 host up) scanned in 15.03 seconds

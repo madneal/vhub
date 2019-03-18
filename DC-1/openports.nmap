@@ -1,0 +1,12 @@
+# Nmap 7.70 scan initiated Fri Mar 15 02:03:12 2019 as: nmap -sT -p- -oA openports 192.168.3.155
+Nmap scan report for 192.168.3.155
+Host is up (0.00041s latency).
+Not shown: 65531 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+111/tcp   open  rpcbind
+32769/tcp open  filenet-rpc
+MAC Address: 00:0C:29:13:07:B2 (VMware)
+
+# Nmap done at Fri Mar 15 02:03:15 2019 -- 1 IP address (1 host up) scanned in 3.17 seconds
