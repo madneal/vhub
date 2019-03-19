@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Mon Mar 18 03:09:55 2019 as: nmap -sT -p- --min-rate 10000 -oA openports 192.168.3.156
+Host: 192.168.3.156 ()	Status: Up
+Host: 192.168.3.156 ()	Ports: 22/open/tcp//ssh///, 113/open/tcp//ident///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 8080/open/tcp//http-proxy///	Ignored State: closed (65530)
+# Nmap done at Mon Mar 18 03:09:59 2019 -- 1 IP address (1 host up) scanned in 3.32 seconds

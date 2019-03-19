@@ -1,0 +1,13 @@
+# Nmap 7.70 scan initiated Mon Mar 18 03:09:55 2019 as: nmap -sT -p- --min-rate 10000 -oA openports 192.168.3.156
+Nmap scan report for 192.168.3.156
+Host is up (0.0010s latency).
+Not shown: 65530 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+113/tcp  open  ident
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+8080/tcp open  http-proxy
+MAC Address: 00:0C:29:CF:69:AD (VMware)
+
+# Nmap done at Mon Mar 18 03:09:59 2019 -- 1 IP address (1 host up) scanned in 3.32 seconds

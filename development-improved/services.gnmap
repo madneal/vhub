@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Mon Mar 18 03:11:15 2019 as: nmap -sC -sV -p22,113,139,445,8080 -oA services 192.168.3.156
+Host: 192.168.3.156 ()	Status: Up
+Host: 192.168.3.156 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 113/open/tcp//ident?///, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)/, 8080/open/tcp//http-proxy//IIS 6.0/
+# Nmap done at Mon Mar 18 03:12:54 2019 -- 1 IP address (1 host up) scanned in 99.43 seconds
