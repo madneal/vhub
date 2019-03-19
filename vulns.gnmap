@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Tue Mar 19 01:58:14 2019 as: nmap --script vuln -p445,139 -oA vulns 192.168.3.156
+Host: 192.168.3.156 ()	Status: Up
+Host: 192.168.3.156 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+# Nmap done at Tue Mar 19 02:04:29 2019 -- 1 IP address (1 host up) scanned in 374.70 seconds

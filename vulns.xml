@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Tue Mar 19 01:58:14 2019 as: nmap -&#45;script vuln -p445,139 -oA vulns 192.168.3.156 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script vuln -p445,139 -oA vulns 192.168.3.156" start="1552975094" startstr="Tue Mar 19 01:58:14 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="NSE" time="1552975107" percent="94.15" remaining="1" etc="1552975107"/>
+<taskprogress task="NSE" time="1552975285" percent="99.47" remaining="1" etc="1552975286"/>
+<taskprogress task="NSE" time="1552975415" percent="99.47" remaining="2" etc="1552975417"/>
+<host starttime="1552975104" endtime="1552975469"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.3.156" addrtype="ipv4"/>
+<address addr="00:0C:29:CF:69:AD" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-regsvc-dos" output="&#xa;  VULNERABLE:&#xa;  Service regsvc in Microsoft Windows systems vulnerable to denial of service&#xa;    State: VULNERABLE&#xa;      The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;      pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;      while working on smb-enum-sessions.&#xa;          &#xa;"><table key="NMAP-2">
+<elem key="title">Service regsvc in Microsoft Windows systems vulnerable to denial of service</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;while working on smb-enum-sessions.&#xa;    </elem>
+</table>
+</table>
+</script></hostscript><times srtt="626" rttvar="3128" to="100000"/>
+</host>
+<runstats><finished time="1552975469" timestr="Tue Mar 19 02:04:29 2019" elapsed="374.70" summary="Nmap done at Tue Mar 19 02:04:29 2019; 1 IP address (1 host up) scanned in 374.70 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
