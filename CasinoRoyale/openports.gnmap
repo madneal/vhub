@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Wed Mar 20 23:10:34 2019 as: nmap -sT -p- --min-rate 10000 -oA openports 192.168.3.157
+Host: 192.168.3.157 ()	Status: Up
+Host: 192.168.3.157 ()	Ports: 21/open/tcp//ftp///, 25/open/tcp//smtp///, 80/open/tcp//http///, 8081/open/tcp//blackice-icecap///	Ignored State: closed (65531)
+# Nmap done at Wed Mar 20 23:10:38 2019 -- 1 IP address (1 host up) scanned in 3.42 seconds

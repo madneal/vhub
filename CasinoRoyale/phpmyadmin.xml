@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Wed Mar 20 23:38:37 2019 as: nmap -&#45;script vuln -p80 -oA phpmyadmin 192.168.3.157 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script vuln -p80 -oA phpmyadmin 192.168.3.157" start="1553139517" startstr="Wed Mar 20 23:38:37 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1553139527" endtime="1553139549"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.3.157" addrtype="ipv4"/>
+<address addr="00:0C:29:CE:4C:9B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /robots.txt: Robots file&#xa;  /phpmyadmin/: phpMyAdmin&#xa;  /cards/: Potentially interesting folder&#xa;  /includes/: Potentially interesting folder&#xa;  /install/: Potentially interesting folder&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-vuln-cve2017-1001000" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<times srtt="312" rttvar="3816" to="100000"/>
+</host>
+<runstats><finished time="1553139549" timestr="Wed Mar 20 23:39:09 2019" elapsed="32.30" summary="Nmap done at Wed Mar 20 23:39:09 2019; 1 IP address (1 host up) scanned in 32.30 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

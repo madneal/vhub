@@ -1,0 +1,12 @@
+# Nmap 7.70 scan initiated Wed Mar 20 23:10:34 2019 as: nmap -sT -p- --min-rate 10000 -oA openports 192.168.3.157
+Nmap scan report for 192.168.3.157
+Host is up (0.00036s latency).
+Not shown: 65531 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+25/tcp   open  smtp
+80/tcp   open  http
+8081/tcp open  blackice-icecap
+MAC Address: 00:0C:29:CE:4C:9B (VMware)
+
+# Nmap done at Wed Mar 20 23:10:38 2019 -- 1 IP address (1 host up) scanned in 3.42 seconds

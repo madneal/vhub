@@ -1,0 +1,19 @@
+# Nmap 7.70 scan initiated Wed Mar 20 23:38:37 2019 as: nmap --script vuln -p80 -oA phpmyadmin 192.168.3.157
+Nmap scan report for 192.168.3.157
+Host is up (0.00031s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /robots.txt: Robots file
+|   /phpmyadmin/: phpMyAdmin
+|   /cards/: Potentially interesting folder
+|   /includes/: Potentially interesting folder
+|_  /install/: Potentially interesting folder
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+MAC Address: 00:0C:29:CE:4C:9B (VMware)
+
+# Nmap done at Wed Mar 20 23:39:09 2019 -- 1 IP address (1 host up) scanned in 32.30 seconds

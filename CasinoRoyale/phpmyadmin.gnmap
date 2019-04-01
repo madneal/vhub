@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Wed Mar 20 23:38:37 2019 as: nmap --script vuln -p80 -oA phpmyadmin 192.168.3.157
+Host: 192.168.3.157 ()	Status: Up
+Host: 192.168.3.157 ()	Ports: 80/open/tcp//http///
+# Nmap done at Wed Mar 20 23:39:09 2019 -- 1 IP address (1 host up) scanned in 32.30 seconds
