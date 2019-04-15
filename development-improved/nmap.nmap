@@ -1,0 +1,141 @@
+# Nmap 7.70 scan initiated Mon Apr  1 03:11:45 2019 as: nmap -A -oA nmap 192.168.3.156
+Nmap scan report for 192.168.3.156
+Host is up (0.00057s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 79:07:2b:2c:2c:4e:14:0a:e7:b3:63:46:c6:b3:ad:16 (RSA)
+|_  256 24:6b:85:e3:ab:90:5c:ec:d5:83:49:54:cd:98:31:95 (ED25519)
+113/tcp  open  ident?
+|_auth-owners: oident
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+|_auth-owners: root
+445/tcp  open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+|_auth-owners: root
+8080/tcp open  http-proxy  IIS 6.0
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 01 Apr 2019 07:11:52 GMT
+|     Server: IIS 6.0
+|     Last-Modified: Wed, 26 Dec 2018 01:55:41 GMT
+|     ETag: "230-57de32091ad69"
+|     Accept-Ranges: bytes
+|     Content-Length: 560
+|     Vary: Accept-Encoding
+|     Connection: close
+|     Content-Type: text/html
+|     <html>
+|     <head><title>DEVELOPMENT PORTAL. NOT FOR OUTSIDERS OR HACKERS!</title>
+|     </head>
+|     <body>
+|     <p>Welcome to the Development Page.</p>
+|     <br/>
+|     <p>There are many projects in this box. View some of these projects at html_pages.</p>
+|     <br/>
+|     <p>WARNING! We are experimenting a host-based intrusion detection system. Report all false positives to patrick@goodtech.com.sg.</p>
+|     <br/>
+|     <br/>
+|     <br/>
+|     <hr>
+|     <i>Powered by IIS 6.0</i>
+|     </body>
+|     <!-- Searching for development secret page... where could it be? -->
+|     <!-- Patrick, Head of Development-->
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 01 Apr 2019 07:11:52 GMT
+|     Server: IIS 6.0
+|     Allow: GET,POST,OPTIONS,HEAD
+|     Content-Length: 0
+|     Connection: close
+|     Content-Type: text/html
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Mon, 01 Apr 2019 07:11:52 GMT
+|     Server: IIS 6.0
+|     Content-Length: 292
+|     Connection: close
+|     Content-Type: text/html; charset=iso-8859-1
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>400 Bad Request</title>
+|     </head><body>
+|     <h1>Bad Request</h1>
+|     <p>Your browser sent a request that this server could not understand.<br />
+|     </p>
+|     <hr>
+|     <address>IIS 6.0 Server at 192.168.3.156 Port 8080</address>
+|_    </body></html>
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: IIS 6.0
+|_http-title: DEVELOPMENT PORTAL. NOT FOR OUTSIDERS OR HACKERS!
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.70%I=7%D=4/1%Time=5CA1B9B8%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,330,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon,\x2001\x20Apr\x2020
+SF:19\x2007:11:52\x20GMT\r\nServer:\x20IIS\x206\.0\r\nLast-Modified:\x20We
+SF:d,\x2026\x20Dec\x202018\x2001:55:41\x20GMT\r\nETag:\x20\"230-57de32091a
+SF:d69\"\r\nAccept-Ranges:\x20bytes\r\nContent-Length:\x20560\r\nVary:\x20
+SF:Accept-Encoding\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r
+SF:\n\r\n<html>\r\n<head><title>DEVELOPMENT\x20PORTAL\.\x20NOT\x20FOR\x20O
+SF:UTSIDERS\x20OR\x20HACKERS!</title>\r\n</head>\r\n<body>\r\n<p>Welcome\x
+SF:20to\x20the\x20Development\x20Page\.</p>\r\n<br/>\r\n<p>There\x20are\x2
+SF:0many\x20projects\x20in\x20this\x20box\.\x20View\x20some\x20of\x20these
+SF:\x20projects\x20at\x20html_pages\.</p>\r\n<br/>\r\n<p>WARNING!\x20We\x2
+SF:0are\x20experimenting\x20a\x20host-based\x20intrusion\x20detection\x20s
+SF:ystem\.\x20Report\x20all\x20false\x20positives\x20to\x20patrick@goodtec
+SF:h\.com\.sg\.</p>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<hr>\r\n<i>Powered\x20by
+SF:\x20IIS\x206\.0</i>\r\n</body>\r\n\r\n<!--\x20Searching\x20for\x20devel
+SF:opment\x20secret\x20page\.\.\.\x20where\x20could\x20it\x20be\?\x20-->\r
+SF:\n\r\n<!--\x20Patrick,\x20Head\x20of\x20Development-->\r\n\r\n</html>\r
+SF:\n")%r(HTTPOptions,A6,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon,\x2001\x2
+SF:0Apr\x202019\x2007:11:52\x20GMT\r\nServer:\x20IIS\x206\.0\r\nAllow:\x20
+SF:GET,POST,OPTIONS,HEAD\r\nContent-Length:\x200\r\nConnection:\x20close\r
+SF:\nContent-Type:\x20text/html\r\n\r\n")%r(RTSPRequest,1CB,"HTTP/1\.1\x20
+SF:400\x20Bad\x20Request\r\nDate:\x20Mon,\x2001\x20Apr\x202019\x2007:11:52
+SF:\x20GMT\r\nServer:\x20IIS\x206\.0\r\nContent-Length:\x20292\r\nConnecti
+SF:on:\x20close\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\n\r
+SF:\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//IETF//DTD\x20HTML\x202\.0//EN\">\
+SF:n<html><head>\n<title>400\x20Bad\x20Request</title>\n</head><body>\n<h1
+SF:>Bad\x20Request</h1>\n<p>Your\x20browser\x20sent\x20a\x20request\x20tha
+SF:t\x20this\x20server\x20could\x20not\x20understand\.<br\x20/>\n</p>\n<hr
+SF:>\n<address>IIS\x206\.0\x20Server\x20at\x20192\.168\.3\.156\x20Port\x20
+SF:8080</address>\n</body></html>\n");
+MAC Address: 00:0C:29:CF:69:AD (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Network Distance: 1 hop
+Service Info: Host: DEVELOPMENT; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: -10s, deviation: 8s, median: -15s
+|_nbstat: NetBIOS name: DEVELOPMENT, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: development
+|   NetBIOS computer name: DEVELOPMENT\x00
+|   Domain name: \x00
+|   FQDN: development
+|_  System time: 2019-04-01T07:13:23+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2019-04-01 03:13:24
+|_  start_date: N/A
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.57 ms 192.168.3.156
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr  1 03:14:10 2019 -- 1 IP address (1 host up) scanned in 145.55 seconds

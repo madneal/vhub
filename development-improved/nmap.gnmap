@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Mon Apr  1 03:11:45 2019 as: nmap -A -oA nmap 192.168.3.156
+Host: 192.168.3.156 ()	Status: Up
+Host: 192.168.3.156 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 113/open/tcp//ident?///, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)/, 8080/open/tcp//http-proxy//IIS 6.0/	Ignored State: closed (995)	OS: Linux 3.2 - 4.9	Seq Index: 250	IP ID Seq: All zeros
+# Nmap done at Mon Apr  1 03:14:10 2019 -- 1 IP address (1 host up) scanned in 145.55 seconds
